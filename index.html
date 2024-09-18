@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Accenture-JioAds Leads LP</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body class="locked">
+    <header>
+        <img class="logo" src="images/Jio-Accenture logo.png" width="200px" height="100%">
+    </header>
+    <div id="passwordPopup">
+        <h2 style="color: azure;">Enter Password</h2>
+        <input type="password" id="passwordInput" placeholder="Password">
+        <button onclick="checkPassword()">Submit</button>
+        <p id="error" style="color: red; display: none;">Password Incorrect. Please Try again</p>
+    </div>
+    <hr style="border: 10px solid #000093;border-radius: 5px;">
+    <div id="mainContent" style="display: none;">
+      <div class="content">
+        <h1>Grow Your Business with Cutting-Edge Digital Solutions</h1><br>
+      </div>
+      <hr style="border: 10px solid #000093;border-radius: 5px;">
+      <div class="card" style="background-color: white;">
+        <img src="./images/mapImg.19fc0ffd.svg" width="50px" height="100%">
+        <h5>400M+ Potential Customers</h5>
+        <img src="./images/registerUser.417e96f7.svg"width="50px" height="100%"/>
+        <h5>267M+ Potential Customers</h5>
+        <img src="./images/connectHome.40b563ce.svg"width="50px" height="100%"/>
+        <h5>50% Connected Home</h5>
+      </div>    
+        <div class="form">
+            <form>
+                <label for="name"><p style="color: white;">Name</p></label>
+                <input type="text" id="name" required>
+                <label for="email"><p style="color: white;">Email</p></label>
+                <input type="text" id="email" required>
+                <label for="phone"><p style="color: white;">Phone Number</p></label>
+                <input type="text" id="phone" required>
+                <label for="company"><p style="color: white;">Company Name</p></label>
+                <input type="text" id="company" required>
+                <br>
+                <p style="color: white;">Dear Customer, By clicking submit you consent to receive exciting offers on SMS/Call.</p>
+                <input type="submit" value="Submit" style="margin-top: 5px;">
+            </form>
+        </div>
+    </div>
+    <script>
+        // Pre-defined password stored in the HTML (temporary approach)
+        const correctPassword = "leads";
+    
+        // Function to check the entered password
+        function checkPassword() {
+          const enteredPassword = document.getElementById('passwordInput').value;
+          if (enteredPassword === correctPassword) {
+            document.getElementById('passwordPopup').style.display = 'none';
+            document.body.classList.remove('locked');
+            document.getElementById('mainContent').style.display = 'block';
+          } else {
+            document.getElementById('error').style.display = 'block';
+          }
+        }
+      </script>
+    
+</body>
+</html>
