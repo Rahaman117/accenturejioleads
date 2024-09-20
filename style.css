@@ -17,6 +17,7 @@ body {
     background-color: #001B6E;
     padding: 20px;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .site-header .logo {
@@ -26,7 +27,7 @@ body {
 /* Main Layout */
 .container {
     width: 100%; /* Ensure the container takes up the full width without overflow */
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 0 10px; /* Reduce side padding to avoid overflow on mobile */
 }
