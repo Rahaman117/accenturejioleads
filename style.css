@@ -4,6 +4,12 @@ body {
     margin: 0;
     padding: 0;
     background-color: #F5F5F5;
+    overflow-x: hidden; /* This will prevent any horizontal scrolling on the entire page */
+}
+
+/* Add box-sizing to ensure padding and border are included in width */
+* {
+    box-sizing: border-box;
 }
 
 /* Header */
@@ -19,10 +25,10 @@ body {
 
 /* Main Layout */
 .container {
-    width: 100%;
+    width: 100%; /* Ensure the container takes up the full width without overflow */
     max-width: 1000px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0 10px; /* Reduce side padding to avoid overflow on mobile */
 }
 
 .main-layout {
@@ -86,7 +92,7 @@ body {
     background-color: #001B6E;
     padding-left: 10px;
     padding-right: 25px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: white;
@@ -156,5 +162,10 @@ body {
 
     .lead-form, .features {
         width: 100%;
+    }
+
+    .lead-form {
+        padding-left: 10px;
+        padding-right: 10px; /* Reduce padding to avoid overflow */
     }
 }
