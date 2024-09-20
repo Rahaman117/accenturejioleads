@@ -1,84 +1,155 @@
-header{
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+}
+
+/* Header */
+.site-header {
+    background-color: #001B6E;
+    padding: 20px;
+    text-align: center;
+}
+
+.site-header .logo {
+    width: 150px;
+}
+
+/* Main Layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-layout {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:rgb(245, 245, 245, 0.5)
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
 }
-body{
-    background-image: url(./images/JioBG.png);
+
+/* Left Side: Features */
+.features {
+    flex: 1;
 }
-div.form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 75vh;
+
+.headline {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    color: #C81D24;
+    margin-bottom: 30px;
 }
-form{
-    background-color: rgb(0, 0, 0, 0.5);
+
+.feature-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.feature {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+.feature img {
+    width: 100px;
+}
+
+.feature h3 {
+    margin-top: 15px;
+    color: #333;
+    font-size: 18px;
+}
+
+.feature p {
+    color: #555;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Right Side: Lead Form */
+.lead-form {
+    flex: 1;
+    background-color: #001B6E;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-}
-form label{
-    display: block;
-    font-size: 16px;
-    color:#333;
-    margin-bottom: 5px;
-    font-family: "Montserrat", sans-serif;
-}
-#passwordPopup {
-    display: block;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: black;
-    border: 1px solid #ccc;
-    padding: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    font-family: "Open Sans", sans-serif;
-}
-input[type="submit"] {
-    background-color: #007BFF;
     color: white;
-    padding: 5px 10px;
-    border: none;
-    cursor: pointer;
-    font-size: 14px;
-    font-family: "Montserrat", sans-serif;
 }
 
-input[type="submit"]:hover {
-    background-color: green;
+.lead-form h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
-p{
-    font-family: "Montserrat", sans-serif;
+
+.lead-form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
 }
-button[onclick="checkPassword()"]{
-    font-family: "Open Sans", sans-serif;
+
+.lead-form input[type="text"],
+.lead-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
 }
-div.content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #041322;
-    font-family: "Open Sans", sans-serif;
-    align-items: center;
-    background-color: #F5F5F5;
+
+.cta-button {
+    width: 100%;
+    background-color: #C81D24;
+    padding: 12px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-div.cards{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.cta-button:hover {
+    background-color: #a3141c;
 }
-div.card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    font-family: "Open Sans", sans-serif;
-    align-items: center;
+
+.consent {
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #001B6E;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-layout {
+        flex-direction: column;
+    }
+
+    .feature-list {
+        grid-template-columns: 1fr;
+    }
+
+    .lead-form, .features {
+        width: 100%;
+    }
 }
