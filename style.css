@@ -187,10 +187,10 @@ width: 100%;
 .carousel-indicators li {
 width: 10px; /* size of indicator */
 height: 10px;
-background-color: gray; /* change to your desired color for inactive indicators */
+background-color: red; /* change to your desired color for inactive indicators */
 }
 
 /* Style for the active indicator */
 .carousel.slide .carousel-indicators li.active {
-background-color: red; /* change to your desired color for the active indicator */
+background-color: #001B6E; /* change to your desired color for the active indicator */
 }
