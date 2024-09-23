@@ -43,6 +43,7 @@ body {
 /* Left Side: Features */
 .features {
     flex: 1;
+    padding-left: 15px;
 }
 
 .headline {
@@ -169,4 +170,27 @@ body {
         padding-left: 10px;
         padding-right: 10px; /* Reduce padding to avoid overflow */
     }
+}
+.carousel-inner img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+/* Styles for the carousel images */
+.carousel-inner img {
+object-fit: cover;
+height: 100%;
+width: 100%;
+}
+
+/* Style for the inactive indicators */
+.carousel-indicators li {
+width: 10px; /* size of indicator */
+height: 10px;
+background-color: gray; /* change to your desired color for inactive indicators */
+}
+
+/* Style for the active indicator */
+.carousel.slide .carousel-indicators li.active {
+background-color: red; /* change to your desired color for the active indicator */
 }

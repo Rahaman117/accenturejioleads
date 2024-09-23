@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jio Ads - Enterprise Lead Generation</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -19,22 +22,22 @@
     <main class="container main-layout">
         <!-- Left Side: Features -->
         <section class="features">
-            <h1 class="headline">Power Your Business with Jio Ads</h1>
-            <div class="feature-list">
-                <div class="feature">
-                    <img src="https://via.placeholder.com/100" alt="Reach Icon">
-                    <h3>Massive Reach</h3>
-                    <p>Connect with 400M+ potential customers.</p>
-                </div>
-                <div class="feature">
-                    <img src="https://via.placeholder.com/100" alt="Performance Icon">
-                    <h3>Top Performance</h3>
-                    <p>Achieve incredible results with targeted campaigns.</p>
-                </div>
-                <div class="feature">
-                    <img src="https://via.placeholder.com/100" alt="Brands Icon">
-                    <h3>Trusted by Top Brands</h3>
-                    <p>Partner with the most successful companies in the world.</p>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="width:300px; height:600px; overflow:hidden;">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./images/Jio-reach-10-gif.gif" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/Jio-brands-10-gif.gif" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/jio-performance=10-gif.gif" class="d-block w-100" alt="...">
+                    </div>
                 </div>
             </div>
         </section>
